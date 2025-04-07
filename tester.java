@@ -27,6 +27,7 @@ public class tester {
 
         System.out.println(r1);
         r1.throwRock();
+        System.out.println(r1.equals(r10));
         System.out.println(r3.findingProb());
         System.out.println(r4.peopleWant());
         System.out.println(r10);

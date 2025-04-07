@@ -100,5 +100,13 @@ class Gem extends Rock{
     public String toString(){
         return super.toString()+" The color of the gem is "+color+" and has a price of "+price+". It has a "+rarity+"% finding it in every 100 rocks. It has a shine value of "+shine+".";
     }
+    public boolean equals(Object obj){
+        Gem rock = (Gem)obj;
+        if(name.equals(rock.getName())&& this.color.equals(rock.getColor())){
+            return true;
+        }else{
+            return false;
+        }
+    }
     
 }

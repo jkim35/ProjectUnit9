@@ -66,4 +66,12 @@ class Diamond extends Gem {
     public String toString(){
         return super.toString()+" The clarity of the diamond is "+clarity+".";
     }
+    public boolean equals(Object obj){
+        Diamond rock = (Diamond)obj;
+        if(this.name.equals(rock.getName())&& this.color.equals(rock.getColor())&&this.clarity == rock.getClarity()){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

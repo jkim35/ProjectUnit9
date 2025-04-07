@@ -66,4 +66,12 @@ public class Rock{
     public String toString(){
         return "Your rock weighs "+weight+" pounds and is " +name+" and has a hardness of "+hardness+" and is found underground in "+depth+"ft.";
     }
+    public boolean equals(Object obj){
+        Rock rock = (Rock)obj;
+        if(name == rock.getName()){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
